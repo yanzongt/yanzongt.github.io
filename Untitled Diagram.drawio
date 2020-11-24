@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-11-24T11:43:06.357Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.84 Safari/537.36" etag="ppBfj-OsvYQXLVIUPAkc" version="13.10.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-24T11:50:10.052Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.84 Safari/537.36" etag="CQJDpfapOhDbVq6mnkrr" version="13.10.0" type="github">
   <diagram id="fHDqY1Y2VMxDnZg57qCj" name="Page-1">
-    <mxGraphModel dx="2028" dy="1147" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1568" dy="1147" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -41,6 +41,12 @@
         <mxCell id="Mumdgj_BCuMlS188kVir-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mumdgj_BCuMlS188kVir-4" target="Mumdgj_BCuMlS188kVir-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="Mumdgj_BCuMlS188kVir-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="Mumdgj_BCuMlS188kVir-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="480" as="targetPoint" />
+            <mxPoint x="130" y="550" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="Mumdgj_BCuMlS188kVir-4" value="HandleWorkItem" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="279" y="450" width="120" height="60" as="geometry" />
         </mxCell>
@@ -65,9 +71,6 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Mumdgj_BCuMlS188kVir-8" value="GetNextWork" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="279" y="200" width="120" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="Mumdgj_BCuMlS188kVir-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mumdgj_BCuMlS188kVir-23" target="Mumdgj_BCuMlS188kVir-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -79,17 +82,14 @@
         </mxCell>
         <mxCell id="Mumdgj_BCuMlS188kVir-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Mumdgj_BCuMlS188kVir-17">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="400" y="230" as="targetPoint" />
+            <mxPoint x="400" y="260" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="Mumdgj_BCuMlS188kVir-17" value="IsCallback" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="620" y="190" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="Mumdgj_BCuMlS188kVir-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Mumdgj_BCuMlS188kVir-19" target="Mumdgj_BCuMlS188kVir-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Mumdgj_BCuMlS188kVir-19" value="RunOptimization" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="600" y="80" width="120" height="60" as="geometry" />
+          <mxGeometry x="600" y="120" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Mumdgj_BCuMlS188kVir-22" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Mumdgj_BCuMlS188kVir-6" target="Mumdgj_BCuMlS188kVir-23">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -124,8 +124,14 @@
         <mxCell id="Mumdgj_BCuMlS188kVir-38" value="PoseGraph" style="swimlane;" vertex="1" parent="1">
           <mxGeometry x="220" y="70" width="350" height="510" as="geometry" />
         </mxCell>
+        <mxCell id="Mumdgj_BCuMlS188kVir-8" value="GetNextWork" style="whiteSpace=wrap;html=1;" vertex="1" parent="Mumdgj_BCuMlS188kVir-38">
+          <mxGeometry x="59" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
         <mxCell id="Mumdgj_BCuMlS188kVir-39" value="Constraint Builder" style="swimlane;" vertex="1" parent="1">
           <mxGeometry x="570" y="70" width="230" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="Mumdgj_BCuMlS188kVir-17" value="IsCallback" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="Mumdgj_BCuMlS188kVir-39">
+          <mxGeometry x="50" y="150" width="80" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
